@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Hello and Welcome to the website</h1>
+	<h2>Hope you have fun random lady(or man)</h2>
+	<h4>What's up</h4>
+
+	<h3>Write somthing!!</h3>
+	<textarea id="textArea1"></textarea>
+	<button id="postComment" onclick="submit()">Submit</button>
+	<p id="messages"> </p>
+
+	<script type="text/javascript">
+		
+		function submit() {
+
+			var newComment = document.getElementById('textArea1').value
+			var x = document.getElementById("messages").innerHTML;
+			document.getElementById("messages").innerHTML = x + newComment + ' ';
+
+			document.getElementById("textArea1").value = "";
+					}
+	</script>
+</body>
+</html>
